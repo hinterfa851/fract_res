@@ -159,7 +159,7 @@ int	main(int argc, char **argv)
 	fractol->draw_arr = mlx_get_data_addr(fractol->image_id,
 			&(fractol->bpp), &(fractol->size_line), &(fractol->endian));
 	alg(fractol);
-	printf("is it working?\n");
+//	printf("is it working?\n");
 	mlx_put_image_to_window(fractol->conn_id,
 			fractol->win_id, fractol->image_id, 0, 0);
 	mlx_hook(fractol->win_id, 6, 1, mouse_move, (void *)fractol);

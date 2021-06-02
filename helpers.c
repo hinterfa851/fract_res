@@ -13,7 +13,7 @@ int	match_fractal(char *ffff)
 		return (1);
 	else if (ft_strcmp(ffff, "julia") == 0)
 		return (0);
-	else if (ft_strcmp(ffff, "burn") == 0)
+	else if (ft_strcmp(ffff, "burning_ship") == 0)
 		return (2);
 	return (42);
 }

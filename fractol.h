@@ -7,7 +7,7 @@
 # define GRAD 10
 # define THREADS 10
 
-# define ERROR "Add fractal name!\nList of avalble names - mandelbrot, julia, burn."
+# define ERROR "Add fractal name!\nList of avalble names - mandelbrot, julia, burning_ship."
 # define START_COLOR 0x000000
 # define END_COLOR 0x05fc1e
 # define BLACK 0x000000
