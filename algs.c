@@ -3,12 +3,13 @@
 int	julia_calculate(double i, double j, t_vars *vars, t_fractol *fractol)
 {
 	int counter;
-
+	
+//	printf("julia body\n");
 	vars->cRe = -0.7;
 	vars->cIm = fractol->d_Re;
 	counter = 0;
-	vars->newRe = (i - WIDTH / 2 + fractol->Y) / (0.25 * WIDTH * fractol->Z);
-	vars->newIm = (j - HEIGHT / 2 + fractol->X) / (0.25 * HEIGHT * fractol->Z);
+	vars->newRe = (i - WIDTH / 2 + fractol->Y) / (0.5 * WIDTH * fractol->Z);
+	vars->newIm = (j - HEIGHT / 2 + fractol->X) / (0.5 * HEIGHT * fractol->Z);
 	while (counter < MAXITERATIONS)
 	{
 		vars->oldRe = vars->newRe;
@@ -32,9 +33,9 @@ int	mandelbrot_calculate(double i, double j, t_vars *vars, t_fractol *fractol)
 	counter = 0;
 	vars->newRe = 0;
 	vars->newIm = 0;
-	vars->pr = ((i - WIDTH / 2)) / (0.25 * WIDTH * fractol->Z)
+	vars->pr = ((i - WIDTH / 2 )) / (0.25 * WIDTH * fractol->Z)
 		+ fractol->X / (WIDTH);
-	vars->pi = ((j - HEIGHT / 2)) / (0.25 * HEIGHT * fractol->Z)
+	vars->pi = ((j - HEIGHT / 2 )) / (0.25 * HEIGHT * fractol->Z)
 		+ fractol->Y / (HEIGHT);
 	while (counter < MAXITERATIONS)
 	{

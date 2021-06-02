@@ -3,7 +3,7 @@
 
 # define WIDTH 700
 # define HEIGHT 700
-# define MAXITERATIONS 200
+# define MAXITERATIONS 2000
 # define GRAD 10
 # define THREADS 10
 

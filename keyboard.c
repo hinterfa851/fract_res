@@ -79,5 +79,6 @@ int		mouse_press(int button, int x, int y, t_fractol *fractol)
 		fractol->Z /= 2;
 		work(fractol);
 	}
+	printf("%d\t%d\n", x, y);
 	return (0);
 }
